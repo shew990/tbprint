@@ -10,6 +10,7 @@ using System;
         public class Global_asax : System.Web.HttpApplication {
             void Application_Start(object sender, EventArgs e) {
                 DevExpress.Web.ASPxWebControl.CallbackError += new EventHandler(Application_Error);
+            DevExpress.XtraReports.Web.ASPxWebDocumentViewer.StaticInitialize();
             }
 
             void Application_End(object sender, EventArgs e) {
